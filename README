@@ -1,0 +1,36 @@
+## Getting Started
+
+First, install all packages for client and Server:
+```bash
+npm install package.json
+# or
+yarn add package.json
+```
+Next, run the development server:
+Client
+```bash
+npm start
+```
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+Server
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
+
+Modify the file config.j if your credential change
+
+  HOST: "localhost",
+    USER: "root",
+    PASSWORD: "",
+    DB: "ClientXYZ",
+    dialect: "mysql",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
